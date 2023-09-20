@@ -22,8 +22,8 @@ int main(void)
 			input[size - 1] = '\0';/*replace newline character*/
 		}
 		parse_input(input, &cmd, args);
-		if (_strcmp(cmd, "exit") == 0)
-			break;
+		/*if (_strcmp(cmd, "exit") == 0)
+			break;*/
 		childPid = fork();
 		if (childPid == -1)
 		{
